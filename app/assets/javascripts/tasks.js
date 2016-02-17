@@ -6,6 +6,6 @@ function ready() {
   $('#new_task').on('ajax:success', newTask);
 
   function newTask(event, date) {
-    $('body').append(data);
+    $('tasks').append(data);
   }
 }
