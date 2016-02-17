@@ -11,7 +11,7 @@ class TasksController < ApplicationController
   # GET /tasks/1
   # GET /tasks/1.json
   def show
-    if request xhr?
+    if request.xhr?
       render '_task', layout: false, locals: {task: @task}
     end
   end
